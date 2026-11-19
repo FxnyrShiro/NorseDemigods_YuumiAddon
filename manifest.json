@@ -1,0 +1,20 @@
+{
+  "name": "YuumiAddon",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/yourusername/YuumiAddon",
+  "description": "Adds the Yuumi god from League of Legends to NorseDemigods mod with all her abilities.",
+  "dependencies": [
+    "NorseDemigods-1.9.3",
+    "jotunn-2.30.2"
+  ],
+  "files": [
+    {
+      "path": "YuumiAddon.dll",
+      "version": "1.0.0"
+    },
+    {
+      "path": "Icons/yuumi_icon.png",
+      "version": "1.0.0"
+    }
+  ]
+}

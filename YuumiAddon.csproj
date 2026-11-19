@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>YuumiAddon</AssemblyName>
+    <RootNamespace>YuumiAddon</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Version>1.0.0</Version>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ValheimManaged>/home/fxnyrshiro/.local/share/Steam/steamapps/common/Valheim/valheim_Data/Managed</ValheimManaged>
+    <BepInExCore>/home/fxnyrshiro/.config/r2modmanPlus-local/Valheim/profiles/Default/BepInEx/core</BepInExCore>
+    <JotunnDir>/home/fxnyrshiro/.config/r2modmanPlus-local/Valheim/profiles/Default/BepInEx/plugins/ValheimModding-Jotunn</JotunnDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="NorseDemigods">
+      <HintPath>/home/fxnyrshiro/mod_source/NorseDemigods.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="assembly_valheim">
+      <HintPath>$(ValheimManaged)/assembly_valheim.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="assembly_utils">
+      <HintPath>$(ValheimManaged)/assembly_utils.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ValheimManaged)/UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ValheimManaged)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>$(ValheimManaged)/UnityEngine.AudioModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(ValheimManaged)/UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(ValheimManaged)/UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(ValheimManaged)/UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExCore)/BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExCore)/0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Jotunn">
+      <HintPath>$(JotunnDir)/Jotunn.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="assembly_guiutils">
+      <HintPath>$(ValheimManaged)/assembly_guiutils.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\Yuumi.png" LogicalName="NorseDemigodsYuumi.Icons.Yuumi.png" />
+    <EmbeddedResource Include="Icons\YuumiP2.png" LogicalName="NorseDemigodsYuumi.Icons.YuumiP2.png" />
+    <EmbeddedResource Include="Icons\YuumiQ.png" LogicalName="NorseDemigodsYuumi.Icons.YuumiQ.png" />
+    <EmbeddedResource Include="Icons\YuumiW.png" LogicalName="NorseDemigodsYuumi.Icons.YuumiW.png" />
+    <EmbeddedResource Include="Icons\YuumiE.png" LogicalName="NorseDemigodsYuumi.Icons.YuumiE.png" />
+    <EmbeddedResource Include="Icons\YuumiR.png" LogicalName="NorseDemigodsYuumi.Icons.YuumiR.png" />
+  </ItemGroup>
+</Project>

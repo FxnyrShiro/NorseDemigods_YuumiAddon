@@ -1,0 +1,50 @@
+322:  - id: Eir
+323-    abilities:
+324-      - id: HolyStrike
+325-        input: SPECIAL_ATTACK
+326-        skills: [Unarmed]
+327-      - id: Stagger
+328-        input: SPECIAL_ATTACK_BLOCKING
+329-        skills: [Spears]
+330-        properties:
+331-          AbilityTheme: BROWN
+332-      - id: HolySun
+333-        input: SLOT_1
+334-      - id: ElementalShield
+335-        input: SLOT_2
+336-        properties:
+337-          AbilityTheme: HOLY
+--
+410:  - id: Hel
+411-    abilities:
+412-      - id: AcidBolt
+413-        input: SPECIAL_ATTACK
+414-        skills: [Unarmed]
+415-      - id: Meteor
+416-        input: SLOT_1
+417-      - id: DecayAura
+418-        input: SLOT_2
+419-      - id: Minions
+420-        input: SLOT_3
+421-      - id: Sacrifice
+422-        input: SLOT_4
+423-    attributes:
+424-      - id: CelestialBody
+425-      - id: PhantomShroud
+--
+457:  - id: Kvasir
+458-    abilities:
+459-      - id: BloodSlash
+460-        input: SPECIAL_ATTACK
+461-        skills: [Knives, Unarmed]
+462-      - id: Warp
+463-        input: SLOT_1
+464-      - id: DarkAura
+465-        input: SLOT_2
+466-      - id: Charm
+467-        input: SLOT_3
+468-      - id: HealOverTime
+469-        input: SLOT_4
+470-        properties:
+471-          AbilityTheme: BLOOD
+472-    attributes:
